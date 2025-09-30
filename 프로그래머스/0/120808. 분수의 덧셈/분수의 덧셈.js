@@ -5,7 +5,7 @@ function solution(numer1, denom1, numer2, denom2) {
     
     // 2. 최대공약수 구하기
     function gcd(a, b) {
-        return b ? gcd(b, a % b) : a;
+        return b !==0 ? gcd(b, a % b) : a;
     }
     
     // 3. 기약분수 만들기
